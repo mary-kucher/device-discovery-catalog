@@ -1,0 +1,13 @@
+@import "../../app/assets/styles/index";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.dropdowns {
+  display: flex;
+  gap: 16px;
+}

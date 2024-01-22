@@ -1,0 +1,31 @@
+@import "../../app/assets/styles/index";
+
+.searchWrapper {
+  display: flex;
+  padding: 5px;
+  max-width: 270px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px 0 0 0 $dark-elements;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $dark-background;
+  }
+
+  @include md-device {
+    padding: 15px;
+  }
+}
+
+.disable {
+  display: none;
+}
+
+.icon {
+  fill: $dark-primary;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}

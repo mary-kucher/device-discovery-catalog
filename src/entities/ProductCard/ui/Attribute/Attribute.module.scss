@@ -1,0 +1,19 @@
+@import "../../../../app/assets/styles";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  gap: 4px;
+}
+
+.name {
+  color: $dark-secondary;
+}
+
+.value {
+  color: $dark-primary;
+}

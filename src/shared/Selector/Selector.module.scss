@@ -1,0 +1,142 @@
+@import "../../app/assets/styles";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: $dark-secondary;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+}
+
+.optionCapacityWrapper {
+  border: 1px solid $dark-placeholders;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid $dark-primary;
+  }
+}
+
+.optionCapacity {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  padding: 7px;
+}
+
+.selectedCapacity {
+  border: 1px solid $dark-primary;
+  color: $white;
+  background-color: $dark-primary;
+}
+
+.optionColorsWrapper {
+  width: 32px;
+  border: solid 1px $dark-elements;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid #b4bdc4;
+  }
+
+  @include md-device {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.optionColor {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  @include md-device {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.selectedColor {
+  border: 1px solid $dark-primary;
+
+  &:hover {
+    border: 1px solid $dark-primary;
+  }
+}
+
+.gold {
+  background-color: #ffd700;
+}
+
+.spacegray {
+  background-color: #4c4c4c;
+}
+
+.gray {
+  background-color: #bcbbb6;
+}
+
+.pink {
+  background-color: #fdd9e5;
+}
+
+.midnightgreen {
+  background-color: #5f7170;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.silver {
+  background-color: #c0c0c0;
+}
+
+.rosegold {
+  background-color: #f7c5ad;
+}
+
+.black {
+  background-color: #252529;
+}
+
+.green {
+  background-color: rgb(202, 235, 202);
+}
+
+.yellow {
+  background-color: rgb(236, 236, 127);
+}
+
+.white {
+  background-color: #f0f0f0;
+}
+
+.purple {
+  background-color: rgb(199, 172, 199);
+}
+
+.red {
+  background-color: rgb(212, 80, 80);
+}

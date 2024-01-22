@@ -1,0 +1,52 @@
+@import "../../app/assets/styles/index";
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 115px;
+  box-shadow: 0 -1px 1px $dark-elements;
+  align-items: center;
+  justify-content: center;
+  color: $dark-secondary;
+
+  @include md-device {
+    height: 96px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  max-width: 1168px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 15px;
+
+  @include md-device {
+    flex-direction: row;
+  }
+}
+
+.itemsWrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.linkItem {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0.48px;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $dark-primary;
+  }
+}
+
+.logo {
+  width: 68px;
+}

@@ -1,0 +1,80 @@
+@import "../../app/assets/styles";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  color: $dark-secondary;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: $dark-placeholders;
+}
+
+.select {
+  display: flex;
+  width: 140px;
+  height: 40px;
+  color: $dark-primary;
+  padding: 12px;
+  border: 1px solid $dark-placeholders;
+  font-family: "Mont", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    border: 1px solid $dark-secondary;
+    cursor: pointer;
+  }
+
+  @include md-device {
+    width: 176px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 140px;
+  border: 1px solid $dark-elements;
+  background: $white;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  z-index: 3;
+
+  @include md-device {
+    width: 176px;
+  }
+}
+
+.option {
+  display: flex;
+  width: inherit;
+  height: 32px;
+  color: $dark-secondary;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background: $dark-background;
+    color: $dark-primary;
+    cursor: pointer;
+  }
+}

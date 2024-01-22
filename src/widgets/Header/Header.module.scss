@@ -1,0 +1,18 @@
+@import "../../app/assets/styles/index";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 0 $dark-elements;
+  gap: 5px;
+}
+
+.actionsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include md-device {
+    justify-content: flex-end;
+  }
+}

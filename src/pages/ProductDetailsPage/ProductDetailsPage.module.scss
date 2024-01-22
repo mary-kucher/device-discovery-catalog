@@ -1,0 +1,125 @@
+@import "../../app/assets/styles";
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.productMainBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: space-between;
+
+  @include md-device {
+    flex-direction: row;
+  }
+}
+
+.rightSideWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  @include md-device {
+    flex-direction: row;
+  }
+}
+
+.shortProductInformation {
+  width: 90vw;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+
+  @include md-device {
+    width: max-content;
+  }
+
+  @include lg-device {
+    width: 55%;
+  }
+}
+
+.selectorsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.id {
+  color: $dark-placeholders;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: $dark-elements;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.attributesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.extAttributesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @include md-device {
+    flex-direction: row;
+  }
+}
+
+.aboutBlock {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  gap: 32px;
+
+  @include md-device {
+    width: 100%;
+  }
+}
+
+.techSpecsBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.textDescription {
+  color: $dark-secondary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+}

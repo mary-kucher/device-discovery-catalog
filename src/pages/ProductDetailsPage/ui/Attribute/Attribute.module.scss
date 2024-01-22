@@ -1,0 +1,24 @@
+@import "../../../../app/assets/styles";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.name {
+  color: $dark-secondary;
+}
+
+.extended {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.value {
+  color: $dark-primary;
+}

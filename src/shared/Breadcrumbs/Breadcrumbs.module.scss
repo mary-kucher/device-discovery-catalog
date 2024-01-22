@@ -1,0 +1,38 @@
+@import "../../app/assets/styles";
+
+.icon {
+  fill: $dark-primary;
+  width: 16px;
+  height: 16px;
+}
+
+.iconArrow {
+  width: 16px;
+  height: 16px;
+  fill: $dark-placeholders;
+}
+
+.iconWrapper {
+  display: flex;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $dark-primary;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+
+  &:last-child {
+    color: $dark-secondary;
+    pointer-events: none;
+  }
+}

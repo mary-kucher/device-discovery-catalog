@@ -1,0 +1,21 @@
+@import "../../../../app/assets/styles";
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.price {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.discount {
+  color: $dark-secondary;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration-line: line-through;
+}

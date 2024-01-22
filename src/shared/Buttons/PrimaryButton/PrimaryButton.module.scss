@@ -1,0 +1,33 @@
+@import "../../../app/assets/styles";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: $dark-primary;
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 13px 0 rgba(23, 32, 49, 0.26);
+  }
+}
+
+.selected {
+  color: $green;
+  background: transparent;
+  border: 1px solid $dark-elements;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
