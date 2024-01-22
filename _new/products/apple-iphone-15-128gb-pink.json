@@ -1,0 +1,44 @@
+{
+    "id": "apple-iphone-15-128gb-pink",
+	"namespaceId": "apple-iphone-15",
+	"name": "Apple iPhone 15 128GB Pink",
+	"capacityAvailable": ["128GB"],
+	"capacity": "128GB",
+	"priceRegular": 1300,
+	"priceDiscount": null,
+	"colorsAvailable": ["black", "green", "yellow", "pink"],
+	"color": "pink",
+	"images": [
+		"img/phones/apple-iphone-15/pink/00.jpg",
+		"img/phones/apple-iphone-15/pink/01.jpg",
+		"img/phones/apple-iphone-15/pink/02.jpg"
+	],
+	"description": [
+		{
+			"title": "What is iPhone 15 made out of?",
+			"text": [
+				"Titanium...",
+			  "iPhone 15 Pro is the first iPhone to feature an aerospace‑grade titanium design, using the same alloy that spacecraft use for missions to Mars. Titanium has one of the best strength‑to‑weight ratios of any metal, making these our lightest Pro models ever. You'll notice the difference the moment you pick one up."
+      ]
+		},
+		{
+			"title": "Camera",
+			"text": [
+				"Meet the first triple-camera system to combine cutting-edge technology with the legendary simplicity of iPhone. Capture up to four times more scene. Get beautiful images in drastically lower light. Shoot the highest-quality video in a smartphone — then edit with the same tools you love for photos. You’ve never shot with anything like it."
+			]
+		},
+		{
+			"title": "Shoot it. Flip it. Zoom it. Crop it. Cut it. Light it. Tweak it. Love it.",
+			"text": [
+			"The iPhone 15 models feature an all-glass front and a colorful, matte glass back that is framed by a color-matched aerospace-grade aluminum frame. Available colors include black, blue, green, yellow, and pink."
+      ]
+		}
+	],
+	"screen": "6.1' IPS",
+	"resolution": "2556x1179",
+	"processor": "Apple A16 Bionic",
+	"ram": "6GB",
+	"camera": "48 Мп + 12 Мп",
+	"zoom": "Digital, 5x",
+	"cell": ["GPRS", "EDGE", "WCDMA", "UMTS", "HSPA", "LTE"]
+}
