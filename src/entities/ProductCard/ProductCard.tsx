@@ -36,7 +36,7 @@ export const ProductCard: React.FC<Props> = ({
     <div className={styles.wrapper} data-cy="cardsContainer">
       <Link reloadDocument to={`/${category}/${itemId}`}>
         <div className={styles.image}>
-          <img src={`/_new/${image}`} alt={name} />
+          <img src={`new/${image}`} alt={name} />
         </div>
         <h3 className={styles.title}>{name}</h3>
       </Link>

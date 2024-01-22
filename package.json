@@ -1,9 +1,9 @@
 {
   "name": "react_phone-catalog",
-  "homepage": ".",
+  "homepage": "https://mary-kucher.github.io/device-discovery-catalog",
   "version": "0.1.0",
   "keywords": [],
-  "author": "Mate Academy",
+  "author": "Maryna Kucher",
   "license": "GPL-3.0",
   "dependencies": {
     "@cypress/react": "^5.12.5",

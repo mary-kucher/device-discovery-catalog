@@ -37,7 +37,7 @@ export const ProdDetailsGallery: React.FC<Props> = ({ images = [] }) => {
             key={img}
             className={styles.wrapperSlideThumb}
           >
-            <img src={`/_new/${img}`} alt="slide" className={styles.imgThumb} />
+            <img src={`new/${img}`} alt="slide" className={styles.imgThumb} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -50,7 +50,7 @@ export const ProdDetailsGallery: React.FC<Props> = ({ images = [] }) => {
       >
         {images.map(img => (
           <SwiperSlide key={img} className={styles.wrapperSlide}>
-            <img src={`/_new/${img}`} alt="slide" className={styles.imgSlide} />
+            <img src={`new/${img}`} alt="slide" className={styles.imgSlide} />
           </SwiperSlide>
         ))}
       </Swiper>
