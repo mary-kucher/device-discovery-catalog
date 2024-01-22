@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.023c80ef.chunk.css",
-    "main.js": "./static/js/main.292cdb8f.chunk.js",
-    "main.js.map": "./static/js/main.292cdb8f.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.330dba63.js",
-    "runtime-main.js.map": "./static/js/runtime-main.330dba63.js.map",
-    "static/css/2.d64f64e8.chunk.css": "./static/css/2.d64f64e8.chunk.css",
-    "static/js/2.eded7806.chunk.js": "./static/js/2.eded7806.chunk.js",
-    "static/js/2.eded7806.chunk.js.map": "./static/js/2.eded7806.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/2.d64f64e8.chunk.css.map": "./static/css/2.d64f64e8.chunk.css.map",
-    "static/css/main.023c80ef.chunk.css.map": "./static/css/main.023c80ef.chunk.css.map",
-    "static/js/2.eded7806.chunk.js.LICENSE.txt": "./static/js/2.eded7806.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "./static/media/Mont-SemiBold.aa84a199.ttf",
-    "static/media/sprite.852da7e1.svg": "./static/media/sprite.852da7e1.svg"
+    "main.css": "/device-discovery-catalog/static/css/main.bcf94309.chunk.css",
+    "main.js": "/device-discovery-catalog/static/js/main.292cdb8f.chunk.js",
+    "main.js.map": "/device-discovery-catalog/static/js/main.292cdb8f.chunk.js.map",
+    "runtime-main.js": "/device-discovery-catalog/static/js/runtime-main.754d0478.js",
+    "runtime-main.js.map": "/device-discovery-catalog/static/js/runtime-main.754d0478.js.map",
+    "static/css/2.d64f64e8.chunk.css": "/device-discovery-catalog/static/css/2.d64f64e8.chunk.css",
+    "static/js/2.eded7806.chunk.js": "/device-discovery-catalog/static/js/2.eded7806.chunk.js",
+    "static/js/2.eded7806.chunk.js.map": "/device-discovery-catalog/static/js/2.eded7806.chunk.js.map",
+    "index.html": "/device-discovery-catalog/index.html",
+    "static/css/2.d64f64e8.chunk.css.map": "/device-discovery-catalog/static/css/2.d64f64e8.chunk.css.map",
+    "static/css/main.bcf94309.chunk.css.map": "/device-discovery-catalog/static/css/main.bcf94309.chunk.css.map",
+    "static/js/2.eded7806.chunk.js.LICENSE.txt": "/device-discovery-catalog/static/js/2.eded7806.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/device-discovery-catalog/static/media/Mont-SemiBold.aa84a199.ttf",
+    "static/media/sprite.852da7e1.svg": "/device-discovery-catalog/static/media/sprite.852da7e1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.330dba63.js",
+    "static/js/runtime-main.754d0478.js",
     "static/css/2.d64f64e8.chunk.css",
     "static/js/2.eded7806.chunk.js",
-    "static/css/main.023c80ef.chunk.css",
+    "static/css/main.bcf94309.chunk.css",
     "static/js/main.292cdb8f.chunk.js"
   ]
 }
