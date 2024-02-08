@@ -9,6 +9,12 @@ html {
   box-sizing: border-box;
 }
 
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3,

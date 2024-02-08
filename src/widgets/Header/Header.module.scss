@@ -9,9 +9,9 @@
 }
 
 .actionsContainer {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+
   @include md-device {
     justify-content: flex-end;
   }
