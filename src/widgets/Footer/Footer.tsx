@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
         <div className={styles.itemsWrapper}>
           <Link
             className={styles.linkItem}
-            to="https://github.com/fe-fe0-OMteam/react_phone-catalog"
+            to="https://github.com/mary-kucher/device-discovery-catalog"
           >
             Github
           </Link>
