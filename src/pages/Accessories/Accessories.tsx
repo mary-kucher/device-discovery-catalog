@@ -2,18 +2,19 @@ import React, { useEffect } from 'react';
 import { PageLayout } from '../../shared/PageLayout';
 import { ProductList } from '../../widgets/ProductList';
 import { useAppSelector } from '../../app/hooks/useAppSelector';
-import styles from './Phones.module.scss';
+import styles from './Accessories.module.scss';
 import { Breadcrumbs } from '../../shared/Breadcrumbs';
+import { NoResults } from '../../widgets/NoResults';
 import { useAppDispatch } from '../../app/hooks/useAppDispatch';
 import { ProductsService } from '../../services/ProductsService';
 import { setCategories } from '../../entities/Category/reducers/categorySlice';
-import { NoResults } from '../../widgets/NoResults';
 
-export const Phones: React.FC = () => {
+export const Accessories: React.FC = () => {
   const { categories } = useAppSelector(state => state.category);
-  const { total, name } = categories.filter(c => c.name === 'phones')[0];
+  const { total, name } = categories.filter(c => c.name === 'accessories')[0];
   const { searchedValue, searchedProducts }
     = useAppSelector(state => state.search);
+  const capitalizedName = name[0].toUpperCase() + name.slice(1);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -28,10 +29,10 @@ export const Phones: React.FC = () => {
           <>
             <Breadcrumbs />
             <div className={styles.pageDetails}>
-              <h1>Mobile phones</h1>
+              <h1>{capitalizedName}</h1>
               {
                 total ? <span className={styles.span}>{`${total} models`}</span>
-                  : <NoResults name="phones" />
+                  : <NoResults name={capitalizedName} />
               }
             </div>
           </>

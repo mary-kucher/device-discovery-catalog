@@ -50,8 +50,8 @@ export const ProductCard: React.FC<Props> = ({
         ))}
       </div>
       <div className={styles.actions}>
-        <AddCartButton />
-        <AddFavouritesButton />
+        <AddCartButton productId={itemId} />
+        <AddFavouritesButton productId={itemId} />
       </div>
     </div>
   );

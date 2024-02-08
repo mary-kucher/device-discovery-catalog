@@ -71,8 +71,8 @@ export const ProductList: React.FC<Props> = ({ category = '' }) => {
       )}
       {isLoading && <Loader />}
       <List>
-        {productsForView.map((prod, i) => (
-          <ProductCard product={prod} key={+i} />
+        {productsForView.map((prod) => (
+          <ProductCard product={prod} key={prod.id} />
         ))}
       </List>
 

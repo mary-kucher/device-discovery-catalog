@@ -30,12 +30,12 @@ export const Selector:React.FC<Props> = ({
       </div>
       <div className={styles.list}>
         {
-          optionsData.map((option, i) => (
+          optionsData.map((option) => (
             colorsSelector
               ? (
                 <button
                   type="button"
-                  key={+i}
+                  key={option}
                   value={option}
                   className={classNames(styles.optionColorsWrapper,
                     { [styles.selectedColor]: current === option })}
@@ -49,7 +49,7 @@ export const Selector:React.FC<Props> = ({
               : (
                 <button
                   type="button"
-                  key={+i}
+                  key={option}
                   value={option}
                   className={classNames(styles.optionCapacityWrapper,
                     { [styles.selectedCapacity]: current === option })}

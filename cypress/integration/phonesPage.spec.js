@@ -1,6 +1,6 @@
 import { page } from '../support/utils/common.js';
 
-describe('Phones page', () => {
+describe('Tablets page', () => {
     it('should have "ProductsList" showing all the "phones"', () => {
         page.selectPhonesOnPage(2, 4, 5);
 

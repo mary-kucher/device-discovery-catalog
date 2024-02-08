@@ -12,9 +12,8 @@ import { Price } from './ui/Price';
 import { AddCartButton } from '../../entities/AddCartButton';
 import { AddFavouritesButton } from '../../entities/AddFavouritesButton';
 import { Attribute } from './ui/Attribute';
-import {
-  SuggestedProductsCarousel,
-} from '../../widgets/SuggestedProductsCarousel';
+// eslint-disable-next-line max-len
+import { SuggestedProductsCarousel } from '../../widgets/SuggestedProductsCarousel';
 import { Loader } from '../../shared/Loader';
 
 export const ProductDetailsPage: React.FC = () => {
@@ -25,6 +24,7 @@ export const ProductDetailsPage: React.FC = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const {
+    id,
     name,
     priceRegular,
     colorsAvailable,
@@ -120,8 +120,8 @@ export const ProductDetailsPage: React.FC = () => {
             </div>
             <Price price={priceDiscount} fullPrice={priceRegular} />
             <div className={styles.buttonsWrapper}>
-              <AddCartButton />
-              <AddFavouritesButton />
+              <AddCartButton productId={id} />
+              <AddFavouritesButton productId={id} />
             </div>
             <div className={styles.attributesWrapper}>
               {Object.entries(attributes).map(([key, value]) => (
@@ -129,7 +129,7 @@ export const ProductDetailsPage: React.FC = () => {
               ))}
             </div>
           </div>
-          <span className={styles.id}>ID: 235183</span>
+          <span className={styles.id}>{`ID: ${priceRegular * 89}MD`}</span>
         </div>
       </div>
       <div className={styles.productDescription}>
@@ -137,8 +137,8 @@ export const ProductDetailsPage: React.FC = () => {
           <h2>About</h2>
           <span className={styles.line} />
           {
-            description.map(({ title, text }, i) => (
-              <article key={+i} className={styles.article}>
+            description.map(({ title, text }) => (
+              <article key={title} className={styles.article}>
                 <h3>{title}</h3>
                 <div className={styles.textDescription}>{text}</div>
               </article>

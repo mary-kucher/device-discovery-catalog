@@ -1,23 +1,22 @@
-import {
-  configureStore,
-  ThunkAction,
-  Action,
-  combineReducers,
-} from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import { persistStore, persistReducer } from 'redux-persist';
 import categoryReducer from '../entities/Category/reducers/categorySlice';
 import searchReducer from '../features/Search/reducers/searchSlice';
+import cartReducer from '../features/Cart/reducers/cartSlice';
+import favouritesReducer from '../features/Favourites/reducers/favouritesSlice';
 
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['auth'],
+  blacklist: ['category', 'search'],
 };
 
 const rootReducer = combineReducers({
   category: categoryReducer,
   search: searchReducer,
+  cart: cartReducer,
+  favourites: favouritesReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -30,12 +29,3 @@ export const store = configureStore({
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
 export const persistor = persistStore(store);
-
-/* eslint-disable @typescript-eslint/indent */
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
-  >;
-/* eslint-enable @typescript-eslint/indent */

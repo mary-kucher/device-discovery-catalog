@@ -56,9 +56,9 @@ export const Pagination: React.FC<Props> = ({
         <Icon className={styles.icon} id="arrow-left" />
       </SecondaryButton>
       {
-        pages.map((page, i) => (
+        pages.map((page) => (
           <SecondaryButton
-            key={+i}
+            key={page}
             isSelected={currentPage === page}
             onClick={page !== DOTS ? () => triggerChangePage(+page) : undefined}
             className={styles.paginationBtn}

@@ -15,6 +15,11 @@
   }
 
   @include lg-device {
-    justify-content: start;
+    justify-content: flex-start;
   }
+}
+
+.wrapperCartList {
+  row-gap: 16px;
+  width: 100%;
 }

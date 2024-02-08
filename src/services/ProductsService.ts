@@ -4,6 +4,9 @@ import { ICategory } from '../entities/Category/category.interface';
 import { $api } from '../app/api/api';
 import { IProductDetails } from '../pages/ProductDetailsPage/IProductDetalis';
 import { EAvailableAreas } from '../features/Search/EAvailableAreas';
+import { IFavourite } from '../features/Favourites/favourite.interface';
+import { IEntry } from '../features/Cart/entry.interface';
+import { ICartEntry } from '../entities/CartEntry/cartEntry.interface';
 
 export class ProductsService {
   static async getProducts(category = '') {
@@ -102,7 +105,9 @@ export class ProductsService {
     return sorted.slice(paginationIdxStart, paginationIdxEnd);
   }
 
-  static async getSearchedProducts(area: string, value: string) {
+  static async getSearchedProducts(
+    area: string, value: string, arrId: IFavourite[] = [],
+  ) {
     switch (area) {
       case EAvailableAreas.Accessories:
       case EAvailableAreas.Phones:
@@ -114,12 +119,39 @@ export class ProductsService {
             .includes(value.toLowerCase()))
           : [];
       }
-      // case EAvailableAreas.Favourites: {
-      //   return
-      // }
+
+      case EAvailableAreas.Favourites: {
+        const products = await this.getFavouritesProducts(arrId);
+
+        return value
+          ? products.filter(product => product.name.toLowerCase()
+            .includes(value.toLowerCase()))
+          : [];
+      }
 
       default:
         return [];
     }
+  }
+
+  static async getFavouritesProducts(idArr: IFavourite[]) {
+    const products = await $api<IProduct[]>('products.json');
+
+    return products.filter(product => idArr
+      .some(iProd => product.itemId === iProd.id));
+  }
+
+  static async getProductsFromCart(entries: IEntry[]) :Promise<ICartEntry[]> {
+    const products = await $api<IProduct[]>('products.json');
+
+    return entries.map(entry => {
+      const product = products.find(prod => prod.itemId === entry.id);
+
+      if (!product) {
+        throw new Error(`Product not found for entry with id ${entry.id}`);
+      }
+
+      return { ...entry, ...product };
+    });
   }
 }

@@ -1,12 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ICategory } from '../category.interface';
+import { categories } from '../../../widgets/Categories/categories.data';
 
 export interface CategoryState {
   categories: ICategory[],
 }
 
 const initialState: CategoryState = {
-  categories: [],
+  categories,
 };
 
 export const categorySlice = createSlice({

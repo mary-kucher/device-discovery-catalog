@@ -1,0 +1,26 @@
+@import "../../../../app/assets/styles";
+
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  @include md-device() {
+    width: 75px;
+  }
+}
+
+.price {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.discount {
+  color: $dark-secondary;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration-line: line-through;
+}

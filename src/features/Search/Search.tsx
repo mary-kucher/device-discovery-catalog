@@ -21,6 +21,7 @@ export const Search: React.FC = () => {
   const isAvailableArea = Object.values(EAvailableAreas)
     .map(v => v.toString()).includes(area);
   const [searchParams, setSearchParams] = useSearchParams();
+  const { favourites } = useAppSelector(state => state.favourites);
   const query = searchParams.get('query') || '';
   const setInputValue = (value: string) => {
     searchParams.set('query', `${value}`);
@@ -41,7 +42,7 @@ export const Search: React.FC = () => {
   }, [query, 500]);
 
   useEffect(() => {
-    ProductsService.getSearchedProducts(area, searchedValue)
+    ProductsService.getSearchedProducts(area, searchedValue, favourites)
       .then(p => dispatch(setSearchedProducts(p)));
   }, [searchedValue]);
 
